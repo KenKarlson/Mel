@@ -49,3 +49,16 @@ body{
   text-decoration: none;
   color:white;
 }
+.main{
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+.home-image path{
+  opacity: 0;
+  cursor: pointer;
+}
+.home-image path:hover{
+  opacity: 1;
+}
