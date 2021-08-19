@@ -17,26 +17,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Bebas Neue';
-  src: local('Bebas Neue Regular Regular'), local('BebasNeueRegular'),
-    url('/assets/fonts/BebasNeueRegular.woff2') format('woff2'),
-    url('/assets/fonts/BebasNeueRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: local('Bebas Neue Light Regular'), local('BebasNeueLight'),
-    url('/assets/fonts/BebasNeueLight.woff2') format('woff2'),
-    url('/assets/fonts/BebasNeueLight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
 *{
   box-sizing: border-box;/* все как у всех, ляпота*/
 }
@@ -109,6 +89,9 @@ body{
 .home-image path:hover{
   opacity: 1;
 }
+path.current-floor {
+  opacity: 1;
+}
 .counter-group{
   display: flex;
   flex-direction: column;
@@ -139,6 +122,7 @@ body{
   /*font-family: 'Bebas Neue Cyrillic',  sans-serif;*/
   margin-top: 10px;
 }
+
 .button-primary{
   background: #3596F5;
   border-radius: 6px;
