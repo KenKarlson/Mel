@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  let currentFloor = 0;
+  let currentFloor = 2;
   let floorPath = $('.home-image path');
   let counterUp = $('.counter-up'); /* кнопка вверх */
   let counterDown = $('.counter-down'); /* кнопка вниз */

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bebas Neue Book';
-  src: local('Bebas Neue Book Regular'), local('BebasNeueBook'),
+  src: local('Bebas Neue Book'), local('BebasNeueBook'),
     url('/assets/fonts/BebasNeueBook.woff2') format('woff2'),
     url('/assets/fonts/BebasNeueBook.woff') format('woff');
   font-weight: normal;
@@ -72,6 +72,7 @@ body{
   max-width: 1280px;
   margin: auto;
   padding-top: 54px;
+  padding-bottom: 99px;
   display: flex;
 }
 .main-info{
@@ -130,4 +131,68 @@ path.current-floor {
   border:none;
   padding: 16px 36px;
   cursor: pointer;
+}
+.footer{
+  height: 171px;
+  background: #D7D7D7;
+  border-top: 4px solid #3596F5;
+}
+.footer-bar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-logo{
+  margin-left: 80px;
+  
+  /*padding: 50px 50px;*/
+}
+.footer-contacts{
+  text-align: left;
+  color:#635854;
+}
+.footer-text{
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.footer-phone{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #635854;
+}
+
+.footerbar-nav{
+  text-align: right;
+}
+.footerbar-menu{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  
+}
+.footerbar-item{
+  margin-left: 20px;
+  margin-right: 20px;
+  color:#635854;
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #635854;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /*margin: 0px 20px;*/
+}
+.imagebox-link{
+  padding-left: 15px;
 }
