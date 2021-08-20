@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   let modal = $('.modal');
   let modalCloseButton = $('.modal-close-button');
+  let viewFlatsButton = $('.view-flats');
 
   //При наведении мышки на этаж
   floorPath.on('mouseover', function () {
@@ -17,6 +18,7 @@ $(document).ready(function () {
 
   floorPath.on('click', toggleModal);
   modalCloseButton.on('click', toggleModal);
+  viewFlatsButton.on('click', toggleModal);
 
   //при нажатии кнопки вверх
   counterUp.on('click', function () {

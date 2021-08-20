@@ -116,7 +116,7 @@ path.current-floor {
   line-height: 37px;
   color: #635854;
 }
-.counter{
+.floor-counter{
   color: #635854;
   font-size: 124px;
   font-family: 'Bebas Neue Book',sans-serif;
@@ -230,6 +230,7 @@ path.current-floor {
 }
 .flats path{
   opacity: 0;
+  cursor: pointer;
 }
 .flats path:hover{
   opacity: 1;
