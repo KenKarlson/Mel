@@ -228,6 +228,12 @@ path.current-floor {
   text-align: center;
   padding: 50px;
 }
+.flats path{
+  opacity: 0;
+}
+.flats path:hover{
+  opacity: 1;
+}
 .modal-title{
   font-family: 'Bebas Neue Book',  sans-serif;
   font-weight: normal;

@@ -5,6 +5,7 @@ $(document).ready(function () {
   let counterDown = $('.counter-down'); /* кнопка вниз */
 
   let modal = $('.modal');
+  let modalCloseButton = $('.modal-close-button');
 
   //При наведении мышки на этаж
   floorPath.on('mouseover', function () {
@@ -14,9 +15,8 @@ $(document).ready(function () {
     $('.counter').text(currentFloor);
   });
 
-  floorPath.on('click', function () {
-    modal.toggleClass('is-open');
-  });
+  floorPath.on('click', toggleModal);
+  modalCloseButton.on('click', toggleModal);
 
   //при нажатии кнопки вверх
   counterUp.on('click', function () {
@@ -45,4 +45,8 @@ $(document).ready(function () {
       $(`[data-floor=${usCurrentFloor}]`).toggleClass('current-floor');
     }
   });
+
+  function toggleModal() {
+    modal.toggleClass('is-open');
+  }
 });
