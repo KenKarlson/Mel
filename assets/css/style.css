@@ -206,6 +206,13 @@ path.current-floor {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0,2s;
+}
+.is-open{
+  opacity: 1;
+  transform: scale(1);
 }
 .modal-dialog{
   position: relative;
@@ -262,9 +269,9 @@ path.current-floor {
 }
 .modal-close-button{
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 27px;
+  top: 38px;
   border:none;
   background-color:#fff;
-
+  cursor: pointer;
 }

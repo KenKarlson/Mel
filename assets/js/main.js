@@ -4,12 +4,18 @@ $(document).ready(function () {
   let counterUp = $('.counter-up'); /* кнопка вверх */
   let counterDown = $('.counter-down'); /* кнопка вниз */
 
+  let modal = $('.modal');
+
   //При наведении мышки на этаж
   floorPath.on('mouseover', function () {
     floorPath.removeClass('current-floor');
     currentFloor = ($(this).attr('data-floor'));
     console.log(currentFloor);
     $('.counter').text(currentFloor);
+  });
+
+  floorPath.on('click', function () {
+    modal.toggleClass('is-open');
   });
 
   //при нажатии кнопки вверх
