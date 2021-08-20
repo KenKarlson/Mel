@@ -221,6 +221,14 @@ path.current-floor {
   background-color: #fff;
   flex-grow: 1;
   display: flex;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s;
+}
+.is-open > .modal-dialog{
+  opacity: 1;
+  transform: translateY(0);
 }
 .modal-image{
   background-color: #EBEBEB;
